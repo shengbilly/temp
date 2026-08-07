@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的進化大挑戰</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <header class="topbar">
+        <div>
+          <h1>我的進化大挑戰</h1>
+          <p>把相同數字合併，達到 2048 吧！</p>
+        </div>
+        <div class="score-panel">
+          <div class="score-box">
+            <span>分數</span>
+            <strong id="score">0</strong>
+          </div>
+          <div class="score-box">
+            <span>最佳</span>
+            <strong id="best">0</strong>
+          </div>
+        </div>
+      </header>
+
+      <div class="controls">
+        <button id="restart" type="button">重新開始</button>
+      </div>
+
+      <div class="board-wrapper">
+        <div id="board" class="board"></div>
+        <div id="message" class="message hidden"></div>
+      </div>
+
+      <p class="help">使用方向鍵來移動方塊。</p>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>

@@ -61,7 +61,7 @@ function getTileImage(value) {
   }
 
   const level = Math.round(Math.log2(value));
-  const imageIndex = Math.min(11, Math.max(1, level));
+  const imageIndex = Math.min(10, Math.max(1, level));
   return `images/level${imageIndex}.png`;
 }
 
